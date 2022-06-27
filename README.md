@@ -9,6 +9,7 @@ Create flow logs instances for VPC and service authorizations to allow flow log 
 1. [Prerequisites](#prerequisites)
 2. [Input Variables](#input-variables)
 3. [Resources](#resources)
+4. [Example Usage](#example-usage)
 
 ---
 
