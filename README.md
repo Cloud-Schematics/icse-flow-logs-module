@@ -99,3 +99,17 @@ For each COS Instance passed using the `cos_instances` variable, a service autho
 ### Flow Logs Collectors
 
 For each VPC passed with a valid value for `flow_logs_bucket_name`, a collector will be created for that VPC targetting the bucket with that name. This collector will be added to the VPC's resource group.
+
+---
+
+## Example Usage
+
+```terraform
+module "flow_logs" {
+  source             = "github.com/Cloud-Schematics/icse-flow-logs-module"
+  prefix             = var.prefix
+  cos_instances      = module.services.cos_instances
+  cos_buckets        = module.services.cos_buckets
+  vpc_flow_logs_data = module.vpc.vpc_flow_logs_data
+}
+```
