@@ -15,7 +15,7 @@ Create flow logs instances for VPC and service authorizations to allow flow log 
 
 ## Prerequisites
 
-This module assumes that the following infrastructer has been created:
+This module assumes that the following infrastructure has been created:
 - VPC
 - Cloud Object Storage Instances
 - Object Storage Buckets
